@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3af934eb6de16e9f606b374fb050290a",
+    "revision": "acb76fddbd9fc058ad839401b0f6d3a8",
     "url": "/marvel-challenge/index.html"
   },
   {
-    "revision": "55c89636b8ae0d05611e",
+    "revision": "d44230cdeca29c910fb5",
     "url": "/marvel-challenge/static/css/main.b100e6da.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/marvel-challenge/static/js/2.d041aa51.chunk.js"
   },
   {
-    "revision": "55c89636b8ae0d05611e",
-    "url": "/marvel-challenge/static/js/main.9f1c9835.chunk.js"
+    "revision": "d44230cdeca29c910fb5",
+    "url": "/marvel-challenge/static/js/main.66e57083.chunk.js"
   },
   {
     "revision": "225eafaab17f503c697e",
