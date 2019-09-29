@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/marvel-challenge/precache-manifest.8898f15f9d541449cf368d6a7461c4ce.js"
+  "/marvel-challenge/precache-manifest.4355aeb0612dcaaafaa46e3b837ad6f3.js"
 );
 
 self.addEventListener('message', (event) => {
