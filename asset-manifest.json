@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/marvel-challenge/static/css/main.b0444850.chunk.css",
-    "main.js": "/marvel-challenge/static/js/main.e82ff05b.chunk.js",
-    "main.js.map": "/marvel-challenge/static/js/main.e82ff05b.chunk.js.map",
+    "main.js": "/marvel-challenge/static/js/main.f7bab8a0.chunk.js",
+    "main.js.map": "/marvel-challenge/static/js/main.f7bab8a0.chunk.js.map",
     "runtime-main.js": "/marvel-challenge/static/js/runtime-main.0cc94ae4.js",
     "runtime-main.js.map": "/marvel-challenge/static/js/runtime-main.0cc94ae4.js.map",
     "static/js/2.ae45d628.chunk.js": "/marvel-challenge/static/js/2.ae45d628.chunk.js",
     "static/js/2.ae45d628.chunk.js.map": "/marvel-challenge/static/js/2.ae45d628.chunk.js.map",
     "index.html": "/marvel-challenge/index.html",
-    "precache-manifest.eb2a957615cbd0ccf24011578df7cefe.js": "/marvel-challenge/precache-manifest.eb2a957615cbd0ccf24011578df7cefe.js",
+    "precache-manifest.dc3ff8c0131735ccd32c820c7894bfbf.js": "/marvel-challenge/precache-manifest.dc3ff8c0131735ccd32c820c7894bfbf.js",
     "service-worker.js": "/marvel-challenge/service-worker.js",
     "static/css/main.b0444850.chunk.css.map": "/marvel-challenge/static/css/main.b0444850.chunk.css.map",
     "static/media/Spiderman-reading.jpg": "/marvel-challenge/static/media/Spiderman-reading.eab2a831.jpg"
