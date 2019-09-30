@@ -12,31 +12,32 @@ const ComicSearch = (props) => {
       setSearchBar(false);
     }
   
-    const searchBarOn = () => {
-      setSearchBar(true);
+    const searchBarOn = (e) => {
+      window.location.reload();
     }
 
     const comicResultsPageOn = (e) => {
         e.preventDefault();
         setComicResultsPage(true);
+        searchBarOff();
     }
 
     return(
         <div>
             {searchBar ?
             <div>
-            <h1>Search For a Marvel Comic Series</h1>
+            <h2>Search For a Marvel Comic Series</h2>
             <Form onSubmit={comicResultsPageOn}>
                 <FormGroup>
                     <Label htmlFor='comicName'/>
                     <Input name='comicName' value={comicName} onChange={(e) => setComicName(e.target.value)} />
-                    <Button type='submit'>Search</Button>
+                    <Button className="button" type='submit'>Search</Button>
                 </FormGroup>
             </Form> 
             </div>
-            : <></>
+            : <></> 
             }
-            {comicResultsPage ? <ComicResults comicName={comicName} searchBar={searchBar} searchBarOn={searchBarOn} searchBarOff={searchBarOff} /> : <></>}
+            {comicResultsPage ? <ComicResults comicName={comicName} searchBar={searchBar} searchBarOn={searchBarOn} searchBarOff={searchBarOff} detailView={props.detailView} setDetailView={props.setDetailView} /> : <></>}
         </div>
     )
 }

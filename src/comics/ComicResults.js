@@ -1,21 +1,22 @@
 import React, {useState, useEffect} from 'react';
 
 import ComicDisplay from './ComicDisplay';
+import APIKEY from '../helpers/environment';
 
 const ComicResults = (props) => {
     const [comicResults, setComicResults] = useState([]);
+    const [offset, setOffset] = useState(0);
 
     const baseURL = 'https://gateway.marvel.com:443/v1/public/comics?';
-    const apikey = '94bfc2c1e9454783329b955ba1751491'
-    // let url;
+    const apikey = APIKEY
 
     const fetchComicResults = () => {
-        let url = `${baseURL}titleStartsWith=${props.comicName}&apikey=${apikey}`;
+        console.log(offset);
+        let url = `${baseURL}titleStartsWith=${props.comicName}&offset=${offset}&apikey=${apikey}`;
         console.log(url);
         fetch(url)
         .then(result => result.json())
-        .then(json => setComicResults(json.data.results))
-
+        .then(json => {setComicResults(json.data.results)})
     }
 
     useEffect(() => {
@@ -24,7 +25,11 @@ const ComicResults = (props) => {
 
     return(
         <div>
-            {comicResults.length == 0 ? <></> : <ComicDisplay comicResults={comicResults} searchBar={props.searchBar} searchBarOn={props.searchBarOn} searchBarOff={props.searchBarOff}  />}
+            {
+                comicResults.length == 0 ? 
+                    <p>No Results. Please Refresh The Page and Try Again.</p> 
+                : <ComicDisplay comicResults={comicResults} searchBarOn={props.searchBarOn} searchBarOff={props.searchBarOff} detailView={props.detailView} setDetailView={props.setDetailView} offset={offset} setOffset={setOffset} fetchComicResults={fetchComicResults} />
+            }
         </div>
     )
 }
